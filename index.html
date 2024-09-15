@@ -1,15 +1,35 @@
 <!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <html>
   <style>
+    /* Iosevka Comfy source: https://github.com/protesilaos/iosevka-comfy */
+    @font-face {
+        font-family: "Iosevka Comfy";
+        src: ./fonts/;
+    }
+    * {
+        font-family: "Iosevka Comfy";
+        color: #C9C7CD;
+    }
     html, body {
+        font-size: 0.95em;
         margin: 0;
         height: 100%;
         background: #0F1010;
     }
-    .desc {
-        margin: auto;
+    .desc, header {
+        text-align: center;
+        margin: 0;
         word-wrap: break-word;
-        width: 100%;
+        /* width: 100%; */
+    }
+    header {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 1.25em;
+        color: #F8C8DC;
+        background: #0F1010;
     }
     .url {
         color: #8EB6F5;
@@ -21,16 +41,77 @@
   </style>
   <head> <title> TwigTheCat </title> </head>
   <body>
-    <div class="desc">
-      
-    </div>
+    <header style="width: fit-content;">
+      Twig&#39;s Cat Corner
+      <hr style="width: auto; color: #F8C8DC;">
+    </header>
+    <table style="width: fit-content; margin-left: auto; margin-right: auto; padding: 0;">
+      <tr style="vertical-align: top;">
+        <td style="padding: 0; margin: 0; width: 20em;"><fieldset style="border: 2px solid #F5BBA1; text-align: start; width: fit-content" class="desc">
+            <legend>Me</legend>
+            <p style="line-height: 1.5;">
+              Hello! my name is Twig, or Lydia, or any variation thereof, eg: Ly, Lyd, or Lyds. <br><br>
+              I&#39;m basically a cat in like, real life (but mainly the internet) :3 <br><br>
+              Also, this is a very basic fact a lot of people seem to miss, I&#39;m a (she/her) <br><br>
+              <br><br>
+            </p>
+        </fieldset></td>
+        <td style="padding: 0; margin: 0; padding-left: 15px;"><fieldset style="border: 2px solid #F5BBA1;" class="desc">
+            <legend>Configs</legend>
+            <table style="text-align: start;">
+              <tr>
+                <td>NixOS:</td>
+                <td><a href="https://git.disroot.org/TwigTheCat/nixos" class="url">https://git.disroot.org/TwigTheCat/nixos</a></td>
+              </tr>
+              <tr>
+                <td>Emacs:</td>
+                <td><a href="https://git.disroot.org/TwigTheCat/emacs" class="url">https://git.disroot.org/TwigTheCat/emacs</a></td>
+              </tr>
+              <tr>
+                <td>Neovim:</td>
+                <td><a href="https://git.disroot.org/TwigTheCat/nvim" class="url">https://git.disroot.org/TwigTheCat/nvim</a></td>
+              </tr>
+              <tr>
+                <td>Other*:</td>
+                <td><a href="https://git.disroot.org/TwigTheCat/.files" class="url">https://git.disroot.org/TwigTheCat/.files</a></td>
+              </tr>
+            </table>
+            * Often outdated
+        </fieldset>
+        <fieldset style="border: 2px solid #F5BBA1;" class="desc">
+          <legend>Projects</legend>
+          <table style="margin-left: auto; margin-right: auto; text-align: start;">
+            <tr>
+              <td>This Website:</td>
+              <td><a href="https://github.com/ImNotTwig/ImNotTwig.github.io" class="url">https://github.com/ImNotTwig/ImNotTwig.github.io</a></td>
+            </tr>
+            <tr>
+              <td>Tetris:</td>
+              <td><a href="https://github.com/ImNotTwig/tetris_go_gui" class="url">https://github.com/ImNotTwig/tetris_go_gui</a></td>
+            </tr>
+            <tr>
+              <td>Tetris (but zig):</td>
+              <td><a href="https://github.com/ImNotTwig/tetris-zig" class="url">https://github.com/ImNotTwig/tetris-zig</a></td>
+            </tr>
+            <tr>
+              <td>No Pass Go:</td>
+              <td><a href="https://github.com/ImNotTwig/no-pass-go-rs" class="url">https://github.com/ImNotTwig/no-pass-go-rs</a></td>
+            </tr>
+          </table>
+        </fieldset></td>
+      </tr>
+      </table>
+    <br>
   </body>
   <footer class="desc">
-    <a href="https://nixwebr.ing/prev/twig" class="url">Prev</a>
+    <a href="https://nixwebr.ing/prev/twig" class="url">&lt- Prev</a>
     | <a href="https://nixwebr.ing/" class="url">nixwebr.ing</a>
     | <a href="https://nixwebr.ing/rand" class="url">Random</a>
-    | <a href="https://nixwebr.ing/next/twig" class="url">Next</a>
+    | <a href="https://nixwebr.ing/next/twig" class="url">Next -&gt</a>
     <br><br>
     copyright 2024 twig
+    <br>
+    <footer><a href="https://github.com/ImNotTwig/ImNotTwig.github.io" class="url">source</a></footer>
   </footer>
 </html>
+

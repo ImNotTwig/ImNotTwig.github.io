@@ -15,6 +15,8 @@
       pkgs.mkShell { 
         packages = [
           pkgs.vscode-langservers-extracted
+          pkgs.python312Packages.python-lsp-server
+          pkgs.python312
         ];
       };
   };
