@@ -17,12 +17,6 @@
         height: 100%;
         background: #0F1010;
     }
-    .desc, header {
-        text-align: center;
-        margin: 0;
-        word-wrap: break-word;
-        /* width: 100%; */
-    }
     header {
         margin: auto;
         padding-top: 20px;
@@ -34,6 +28,10 @@
     .url {
         color: #8EB6F5;
         text-decoration: underline;
+    }
+    fieldset {
+        border: 2px solid #F5BBA1;
+        text-align: start;
     }
     footer {
         text-align: center;
@@ -48,27 +46,30 @@
     <div title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad." style="color: #FCA5A5;">psst, (hover over this)</div>
     <table style="width: fit-content; margin-left: auto; margin-right: auto; padding: 0;">
       <tr style="vertical-align: top;">
-        <td style="padding: 0; margin: 0; width: 20em;">
-          <fieldset style="border: 2px solid #F5BBA1; text-align: start; width: fit-content" class="desc">
+        <td style="padding: 0; margin: 0; width: 50em;">
+          <fieldset>
             <legend>Me</legend>
             <p style="line-height: 1.5;">
               Hello! my name is Twig, or Lydia, or any variation thereof, eg: Ly, Lyd, or Lyds. <br><br>
               I&#39;m basically a cat in like, real life (but mainly the internet) :3 <br><br>
               Also, this is a very basic fact a lot of people seem to miss, I&#39;m a (she/her) <br><br>
-              I like Linux, programming, math, and other tech related stuff, though in the grand scheme of things, I&#39;m probably in the pit of despair in terms of knowledge about them. see <a href="https://baresearch.org/image_proxy?url=https%3A%2F%2Fagile-mercurial.com%2Fwp-content%2Fuploads%2F2019%2F07%2Fdkx-1.png%3Fw%3D890&h=6760cfd78e8ed5c8e036a98a735931a69e9ef7ebf3e7d4d5b3234daabb2a37dc" class="url">this image.</a>
+              I like Linux, programming, math, and other tech related stuff, though in the grand scheme of things, I&#39;m probably in the pit of despair in terms of knowledge about them. see
+              <a href="https://agile-mercurial.com/wp-content/uploads/2019/07/dk4.png" class="url">this image.</a> <br> <br>
+              Currently I am on <a href="https://nixos.org/" class="url">NixOS</a>, which is a declarative Linux distro that offers reproducible builds of the parts of your computer it manages, which theoretically could be everything, but usually isnt.
               <br><br>
             </p>
           </fieldset>
         </td>
         <td style="padding: 0; margin: 0; padding-left: 15px;">
-          <fieldset style="border: 2px solid #F5BBA1; text-align: start;" class="desc">
+          <fieldset>
             <legend>Configs</legend>
             <a href="https://git.disroot.org/TwigTheCat/nixos" class="url">NixOS</a> <br>
             <a href="https://git.disroot.org/TwigTheCat/emacs" class="url">Emacs</a> <br>
             <a href="https://git.disroot.org/TwigTheCat/nvim" class="url">Neovim</a> <br>
             <a href="https://git.disroot.org/TwigTheCat/.files" class="url">Other*</a> <br>
+            * Usually out of date
           </fieldset>
-          <fieldset style="border: 2px solid #F5BBA1; text-align: start;" class="desc">
+          <fieldset>
             <legend>Projects</legend>
             <a href="https://github.com/ImNotTwig/ImNotTwig.github.io" class="url">This Website</a> <br>
             <a href="https://github.com/ImNotTwig/tetris_go_gui" class="url">Tetris</a> - tetris, in go<br>
@@ -82,7 +83,7 @@
     This website may not use javascript, but my desktop does! (I hate gtk, why does it have to look so good)
   </body>
   <hr style="width: auto; color: #BFD7B5;">
-  <footer class="desc">
+  <footer>
     <a href="https://nixwebr.ing/prev/twig" class="url">&lt- Prev</a>
     | <a href="https://nixwebr.ing/" class="url">nixwebr.ing</a>
     | <a href="https://nixwebr.ing/rand" class="url">Random</a>
