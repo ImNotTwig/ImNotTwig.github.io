@@ -9,6 +9,7 @@
     }
     * {
         font-family: "Iosevka Comfy";
+        font-weight: 700;
         color: #C9C7CD;
     }
     html, body {
@@ -36,27 +37,70 @@
     footer {
         text-align: center;
     }
+    .scrolling-wrapper {
+        display: inline-block;
+        overflow-x: auto;
+        white-space: nowrap;
+        border: 2px dotted #F49AC2;
+        scrollbar-width: none;
+
+        .card {
+            display: inline-block;
+        }
+    }
+    .pfp {
+        display: inline-block;
+        overflow: hidden;
+    }
+    .pfp img {
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .pfp img:hover {
+        transform: translateY(-5px);
+    }
   </style>
   <head> <title> TwigTheCat </title> </head>
   <body style="text-align: center;">
     <header style="width: fit-content;">
-      Twig&#39;s Cat Corner
+      Twig&#39;s Cat Corner 
+      <div class="pfp"><a href="https://github.com/ImNotTwig"><img src="./img/twig.png" style="width: 60px; vertical-align: middle;"></img></a></div>
       <hr style="width: auto; color: #F8C8DC;">
     </header>
     <div title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad." style="color: #FCA5A5;">psst, (hover over this)</div>
-    <table style="width: fit-content; margin-left: auto; margin-right: auto; padding: 0;">
+    <table style="width: 60%; margin-left: auto; margin-right: auto; padding: 0;">
       <tr style="vertical-align: top;">
         <td style="padding: 0; margin: 0; width: 50em;">
           <fieldset>
             <legend>Me</legend>
-            <p style="line-height: 1.5;">
-              Hello! my name is Twig, or Lydia, or any variation thereof, eg: Ly, Lyd, or Lyds. <br><br>
-              I&#39;m basically a cat in like, real life (but mainly the internet) :3 <br><br>
-              Also, this is a very basic fact a lot of people seem to miss, I&#39;m a (she/her) <br><br>
-              I like Linux, programming, math, and other tech related stuff, though in the grand scheme of things, I&#39;m probably in the pit of despair in terms of knowledge about them. see
-              <a href="https://agile-mercurial.com/wp-content/uploads/2019/07/dk4.png" class="url">this image.</a> <br> <br>
-              Currently I am on <a href="https://nixos.org/" class="url">NixOS</a>, which is a declarative Linux distro that offers reproducible builds of the parts of your computer it manages, which theoretically could be everything, but usually isnt.
-              <br><br>
+            <p>
+              Hello! my name is Twig, or Lydia, or any variation thereof, eg: Ly, Lyd, or Lyds.
+            </p>
+            <p>
+              I&#39;m basically a cat in like, real life (but mainly the internet) :3
+            </p>
+            <p>
+              Also, this is a very basic fact a lot of people seem to miss, I&#39;m a (she/her)
+            </p>
+            <p>
+              I like Linux, programming, math, and other tech related stuff, though in the grand scheme of things,
+              I&#39;m probably in the pit of despair in terms of knowledge about them. see
+              <a href="https://agile-mercurial.com/wp-content/uploads/2019/07/dk4.png" class="url">this image</a>.
+            </p>
+            <p>
+              Currently I am on <a href="https://nixos.org/" class="url">NixOS</a>,
+              which is a declarative Linux distro that offers reproducible builds of
+              the parts of your computer it manages, which theoretically could be everything, but usually isnt.
+            </p>
+            <p>
+              I have around 5+ years of experience with Linux, and I have been programming for about 3. As a child I would program in Scratch for fun,
+              much like a modern developer, i took other&#39;s code and incorporated it into my own.
+              Nowadays, I generally program in Zig, Go, or Rust. Sometimes I like to dabble in functional languages like Haskell and Ocaml.
+              Of course, I also use nix, because I mean, I use NixOS.
+            </p>
+            <p>
+              I also enjoy making digital art. I don&#39;t really post my art online, but perhaps this site will be where I end up doing so.
+              I mostly draw my own characters, but sometimes i draw other things such as other people&#39;s characters or architecture.
             </p>
           </fieldset>
         </td>
@@ -75,6 +119,18 @@
             <a href="https://github.com/ImNotTwig/tetris_go_gui" class="url">Tetris</a> - tetris, in go<br>
             <a href="https://github.com/ImNotTwig/tetris-zig" class="url">Tetris (but zig)</a> - tetris but better, in zig<br>
             <a href="https://github.com/ImNotTwig/no-pass-go-rs" class="url">No Pass Go</a> - my password manager<br>
+          </fieldset>
+          <fieldset>
+            <legend>Contact</legend>
+            Discord: TwigTheCat <br>
+            Email: mrrp@twigthecat.anonaddy.me <br>
+            Matrix: @twigthecat:matrix.org <br>
+            SimpleX:
+            <a href="https://simplex.chat/contact#/?v=2-5&smp=smp%3A%2F%2FenEkec4hlR3UtKx2NMpOUK_K4ZuDxjWBO1d9Y4YXVaA%3D%40smp14.simplex.im%2FWXPE3KAIBp1glEiTzjY1hj4zUm60kHXy%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEA7ds3943mZbbhsi6lDvZwOb6aJBprhduqBfq9Sg2Bgxk%3D%26srv%3Daspkyu2sopsnizbyfabtsicikr2s4r3ti35jogbcekhm3fsoeyjvgrid.onion" class="url">
+              Here
+            </a>
+            <br> <br>
+            I most commonly use Discord, however, I will reply somewhat quickly to messages sent to me on SimpleX, but please do not message me through other means unless you absolutely refuse to use Discord or SimpleX, and do not expect a quick response if so. <br>
           </fieldset>
         </td>
       </tr>
