@@ -10,15 +10,31 @@
     * {
         font-family: "Iosevka Comfy";
         font-weight: 700;
-        color: #C9C7CD;
     }
+
     html, body {
+        position: relative;
+        color: #C9C7CD;
         font-size: 0.95em;
         margin: 0;
         height: 100%;
         background: #0F1010;
     }
+    
+    body {
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+    
+    body::after {
+        content: '';
+        display: block;
+        height: 50px;
+        /* Set same as footer's height */
+    }
     header {
+        min-height: 50px;
         margin: auto;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -26,16 +42,28 @@
         color: #F8C8DC;
         background: #0F1010;
     }
-    .url {
+    a {
         color: #8EB6F5;
         text-decoration: underline;
     }
+    a:visited {
+        color: #C3B1E1;
+    }
+    
     fieldset {
         border: 2px solid #F5BBA1;
         text-align: start;
     }
     footer {
+        background: #0F1010;
         text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        margin-bottom: 10px;
     }
     .pfp {
         display: inline-block;
@@ -56,7 +84,7 @@
       <div class="pfp"><a href="https://github.com/ImNotTwig"><img src="./img/twig.png" style="width: 60px; vertical-align: middle;"></img></a></div>
       <hr style="width: auto; color: #F8C8DC;">
     </header>
-    <div title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad." style="color: #FCA5A5;">psst, (hover over this)</div>
+    <div title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad." style="color: #FCA5A5; width: fit-content; margin: auto;">psst, (hover over this)</div>
     <table style="width: 60%; margin-left: auto; margin-right: auto; padding: 0;">
       <tr style="vertical-align: top;">
         <td style="padding: 0; margin: 0; width: 50em;">
@@ -74,10 +102,10 @@
             <p>
               I like Linux, programming, math, and other tech related stuff, though in the grand scheme of things,
               I&#39;m probably in the pit of despair in terms of knowledge about them. see
-              <a href="https://agile-mercurial.com/wp-content/uploads/2019/07/dk4.png" class="url">this image</a>.
+              <a href="https://agile-mercurial.com/wp-content/uploads/2019/07/dk4.png">this image</a>.
             </p>
             <p>
-              Currently I am on <a href="https://nixos.org/" class="url">NixOS</a>,
+              Currently I am on <a href="https://nixos.org/">NixOS</a>,
               which is a declarative Linux distro that offers reproducible builds of
               the parts of your computer it manages, which theoretically could be everything, but usually isnt.
             </p>
@@ -96,18 +124,18 @@
         <td style="padding: 0; margin: 0; padding-left: 15px;">
           <fieldset>
             <legend>Configs</legend>
-            <a href="https://git.disroot.org/TwigTheCat/nixos" class="url">NixOS</a> <br>
-            <a href="https://git.disroot.org/TwigTheCat/emacs" class="url">Emacs</a> <br>
-            <a href="https://git.disroot.org/TwigTheCat/nvim" class="url">Neovim</a> <br>
-            <a href="https://git.disroot.org/TwigTheCat/.files" class="url">Other*</a> <br>
+            <a href="https://git.disroot.org/TwigTheCat/nixos">NixOS</a> <br>
+            <a href="https://git.disroot.org/TwigTheCat/emacs">Emacs</a> <br>
+            <a href="https://git.disroot.org/TwigTheCat/nvim">Neovim</a> <br>
+            <a href="https://git.disroot.org/TwigTheCat/.files">Other*</a> <br>
             * Usually out of date
           </fieldset>
           <fieldset>
             <legend>Projects</legend>
-            <a href="https://github.com/ImNotTwig/ImNotTwig.github.io" class="url">This Website</a> <br>
-            <a href="https://github.com/ImNotTwig/tetris_go_gui" class="url">Tetris</a> - tetris, in go<br>
-            <a href="https://github.com/ImNotTwig/tetris-zig" class="url">Tetris (but zig)</a> - tetris but better, in zig<br>
-            <a href="https://github.com/ImNotTwig/no-pass-go-rs" class="url">No Pass Go</a> - my password manager<br>
+            <a href="https://github.com/ImNotTwig/ImNotTwig.github.io">This Website</a> <br>
+            <a href="https://github.com/ImNotTwig/tetris_go_gui">Tetris</a> - tetris, in go<br>
+            <a href="https://github.com/ImNotTwig/tetris-zig">Tetris (but zig)</a> - tetris but better, in zig<br>
+            <a href="https://github.com/ImNotTwig/no-pass-go-rs">No Pass Go</a> - my password manager<br>
           </fieldset>
           <fieldset>
             <legend>Contact</legend>
@@ -115,11 +143,12 @@
             Email: mrrp@twigthecat.anonaddy.me <br>
             Matrix: @twigthecat:matrix.org <br>
             SimpleX:
-            <a href="https://simplex.chat/contact#/?v=2-5&smp=smp%3A%2F%2FenEkec4hlR3UtKx2NMpOUK_K4ZuDxjWBO1d9Y4YXVaA%3D%40smp14.simplex.im%2FWXPE3KAIBp1glEiTzjY1hj4zUm60kHXy%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEA7ds3943mZbbhsi6lDvZwOb6aJBprhduqBfq9Sg2Bgxk%3D%26srv%3Daspkyu2sopsnizbyfabtsicikr2s4r3ti35jogbcekhm3fsoeyjvgrid.onion" class="url">
+            <a href="https://simplex.chat/contact#/?v=2-5&smp=smp%3A%2F%2FenEkec4hlR3UtKx2NMpOUK_K4ZuDxjWBO1d9Y4YXVaA%3D%40smp14.simplex.im%2FWXPE3KAIBp1glEiTzjY1hj4zUm60kHXy%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEA7ds3943mZbbhsi6lDvZwOb6aJBprhduqBfq9Sg2Bgxk%3D%26srv%3Daspkyu2sopsnizbyfabtsicikr2s4r3ti35jogbcekhm3fsoeyjvgrid.onion">
               Here
-            </a>
-            <br> <br>
-            I most commonly use Discord, however, I will reply somewhat quickly to messages sent to me on SimpleX, but please do not message me through other means unless you absolutely refuse to use Discord or SimpleX, and do not expect a quick response if so. <br>
+            </a> <br>
+            Signal: TwigTheCat.69 <br>
+            <br>
+            Do not message me on any platform other than Discord, SimpleX, or Signal, unless you aren&#39;t able or refuse to use those services. I hardly check my email, and I currently do not use Matrix. They are there for posterity, and should only be used in the aformentioned circumstances. <br>
           </fieldset>
         </td>
       </tr>
@@ -129,14 +158,14 @@
   </body>
   <hr style="width: auto; color: #BFD7B5;">
   <footer>
-    <a href="https://nixwebr.ing/prev/twig" class="url">&lt- Prev</a>
-    | <a href="https://nixwebr.ing/" class="url">nixwebr.ing</a>
-    | <a href="https://nixwebr.ing/rand" class="url">Random</a>
-    | <a href="https://nixwebr.ing/next/twig" class="url">Next -&gt</a>
+    <a href="https://nixwebr.ing/prev/twig">&lt- Prev</a>
+    | <a href="https://nixwebr.ing/">nixwebr.ing</a>
+    | <a href="https://nixwebr.ing/rand">Random</a>
+    | <a href="https://nixwebr.ing/next/twig">Next -&gt</a>
     <br><br>
     copyright 2024 twig
     <br>
-    <footer><a href="https://github.com/ImNotTwig/ImNotTwig.github.io" class="url">source</a></footer>
+    <a href="https://github.com/ImNotTwig/ImNotTwig.github.io">source</a>
   </footer>
 </html>
 
