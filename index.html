@@ -5,7 +5,7 @@
     /* Iosevka Comfy source: https://github.com/protesilaos/iosevka-comfy */
     @font-face {
         font-family: "Iosevka Comfy";
-        src: ./fonts/;
+        src: url(./fonts/iosevka-comfy-normalregularupright.ttf);
     }
 
     * {
@@ -15,6 +15,7 @@
 
     html,
     body {
+        box-sizing: border-box;
         position: relative;
         color: #C9C7CD;
         font-size: 0.95em;
@@ -32,7 +33,7 @@
     body::after {
         content: '';
         display: block;
-        height: 50px;
+        height: 100px;
     }
 
     header {
@@ -77,6 +78,11 @@
         overflow: hidden;
     }
 
+    td, tr {
+    padding: 0;
+    margin: 0;
+    }
+
     .pfp img {
         display: block;
         transition: transform 0.3s ease;
@@ -101,9 +107,9 @@
     <div
       title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad."
       style="color: #FCA5A5; width: fit-content; margin: auto;">psst, (hover over this)</div>
-    <table style="width: 60%; margin-left: auto; margin-right: auto; padding: 0;">
+    <table style="width: 60%; margin-left: auto; margin-right: auto;">
       <tr style="vertical-align: top; height: 100%;">
-        <td style="padding: 0; margin: 0; width: 50em;">
+        <td style="width: 50em;">
           <div style="height: 100%; margin: 0px; padding: 0px;">
             <fieldset style="height: 100%;">
               <legend>Me</legend>
@@ -124,7 +130,7 @@
               </p>
               <p>
                 I have around 5+ years of experience with Linux, and I have been programming for about 3. As a child I would
-                program in Scratch for fun, much like a modern developer, i took other&#39;s code and incorporated it into
+                program in Scratch for fun, much like a modern developer, I took other&#39;s code and incorporated it into
                 my own. Nowadays, I generally program in Zig, Go, or Rust. Sometimes I like dabble in functional languages
                 like Haskell and Ocaml. Of course, I also use nix, because I mean, I use NixOS.
               </p>
@@ -136,7 +142,7 @@
             </fieldset>
           </div>
         </td>
-        <td style="padding: 0; margin: 0; padding-left: 15px; height: 100%;">
+        <td style="padding-left: 15px; height: 100%;">
           <div style="height: 100%; margin: 0px; padding: 0px; display: flex; flex-direction: column;">
             <fieldset style="flex: 1;">
               <legend>Configs</legend>
@@ -173,6 +179,25 @@
         </td>
       </tr>
     </table>
+    <table style="width: 60%; margin-left: auto; margin-right: auto;">
+      <tr style="vertical-align: top; height: 100%;">
+        <td>
+            <fieldset style="flex: 1;">
+              <legend>test</legend>
+              sdjfidsjhfksdkfhsdfjkgherjaf
+              ghjsdfghjsdgfjhs
+              dgfjhsdgfjhdsgjhdsfgjhesfd
+              ghjsdgfjhdsgrfjhsdgfjhsdgfy
+              jdshfgeyjshdfgjhsdfgjdshgfjrhw
+              sfgjsdhfgjhsdfguyweitfgiuyweyrt
+              uiyweayfguwaeysfgyuiweasgfde67
+              iyedfgbhuregyuerhfdyuigeryiutf
+              erayuuigfhuierrthferoahkgthiy
+              edfgeujkdghbdjhfgh
+            </fieldset>
+        </td>
+      </tr>
+    </table>
     <br>
   </body>
   <footer>
@@ -188,3 +213,4 @@
     <a href="https://github.com/ImNotTwig/ImNotTwig.github.io">source</a>
   </footer>
 </html>
+
