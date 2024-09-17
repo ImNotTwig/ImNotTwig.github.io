@@ -34,6 +34,7 @@
         content: '';
         display: block;
         height: 100px;
+        margin-left: 16px;
     }
 
     header {
@@ -69,8 +70,24 @@
         margin-right: auto;
         position: fixed;
         bottom: 0;
-        height: 100px;
+        height: 85px;
         padding-bottom: 10px;
+    }
+    .sidebar {
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 16px;
+        float: left;
+        margin-left: 15px;
+    }
+    .sidebar-strip {
+        width: 3px;
+        height: 100%;
+        padding: 0;
+        margin: 0; 
     }
 
     .pfp {
@@ -79,8 +96,8 @@
     }
 
     td, tr {
-    padding: 0;
-    margin: 0;
+        padding: 0;
+        margin: 0;
     }
 
     .pfp img {
@@ -98,18 +115,18 @@
   </head>
 
   <body style="text-align: center;">
-    <header style="width: fit-content;">
+    <header style="width: fit-content; padding-left: 60px;">
       Twig&#39;s Cat Corner
       <div class="pfp"><a href="https://github.com/ImNotTwig">
           <img src="./img/twig.png" style="width: 60px; vertical-align: middle;"></img></a></div>
-      <hr style="width: auto; color: #F8C8DC;">
+      <hr style="color: #F8C8DC;">
     </header>
-    <div
-      title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad."
+
+    <div title="if you have dark reader, or some other plugin for a similar purpose, please disable it, this page is dark and those types of css changes only make the accents look bad."
       style="color: #FCA5A5; width: fit-content; margin: auto;">psst, (hover over this)</div>
-    <table style="width: 60%; margin-left: auto; margin-right: auto;">
+    <table style="width: 70%; margin-left: auto; margin-right: auto;">
       <tr style="vertical-align: top; height: 100%;">
-        <td style="width: 50em;">
+        <td style="width: 60%;">
           <div style="height: 100%; margin: 0px; padding: 0px;">
             <fieldset style="height: 100%;">
               <legend>Me</legend>
@@ -179,30 +196,59 @@
         </td>
       </tr>
     </table>
-    <table style="width: 60%; margin-left: auto; margin-right: auto;">
+    <table style="width: 70%; margin-left: auto; margin-right: auto;">
       <tr style="vertical-align: top; height: 100%;">
         <td>
-            <fieldset style="flex: 1;">
-              <legend>test</legend>
-              sdjfidsjhfksdkfhsdfjkgherjaf
-              ghjsdfghjsdgfjhs
-              dgfjhsdgfjhdsgjhdsfgjhesfd
-              ghjsdgfjhdsgrfjhsdgfjhsdgfy
-              jdshfgeyjshdfgjhsdfgjdshgfjrhw
-              sfgjsdhfgjhsdfguyweitfgiuyweyrt
-              uiyweayfguwaeysfgyuiweasgfde67
-              iyedfgbhuregyuerhfdyuigeryiutf
-              erayuuigfhuierrthferoahkgthiy
-              edfgeujkdghbdjhfgh
-            </fieldset>
+          <fieldset style="flex: 1;">
+            <legend>test</legend>
+            sdjfidsjhfksdkfhsdfjkgherjaf
+            ghjsdfghjsdgfjhs
+            dgfjhsdgfjhdsgjhdsfgjhesfd
+            ghjsdgfjhdsgrfjhsdgfjhsdgfy
+            jdshfgeyjshdfgjhsdfgjdshgfjrhw
+            sfgjsdhfgjhsdfguyweitfgiuyweyrt
+            uiyweayfguwaeysfgyuiweasgfde67
+            iyedfgbhuregyuerhfdyuigeryiutf
+            erayuuigfhuierrthferoahkgthiy
+            edfgeujkdghbdjhfgh
+          </fieldset>
         </td>
       </tr>
     </table>
     <br>
   </body>
+  <table class="sidebar" style="height: 100%;">
+    <tr style="height: 100%;">
+      
+      <td style="height: 100%;">
+        <hr class="sidebar-strip" style="color: #F8C8DC; background-color: #F8C8DC;">
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="margin: 0; color: #F49AC2; background-color: #F49AC2;">
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="margin: 0; color: #FCA5A5; background-color: #FCA5A5;">
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="margin: 0; color: #F5BBA1; background-color: #F5BBA1;">
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="margin: 0; color: #BFD7B5; background-color: #BFD7B5;">
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="margin: 0; color: #8EB6F5; background-color: #8EB6F5;">    
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="margin: 0; color: #C1E7E3; background-color: #C1E7E3;">    
+      </td>
+      <td>
+        <hr class="sidebar-strip" style="color: #C3B1E1; background-color: #C3B1E1;">
+      </td>
+      
+    </tr>
+  </table>
   <footer>
-    This website may not use javascript, but my desktop does! (I hate gtk, why does it have to look so good)
-    <hr style="width: auto; color: #BFD7B5;">
+    This website may not use javascript, but my desktop does! (I hate gtk, why does it have to look so good) <br>
     <a href="https://nixwebr.ing/prev/twig">&lt- Prev</a>
     | <a href="https://nixwebr.ing/">nixwebr.ing</a>
     | <a href="https://nixwebr.ing/rand">Random</a>
