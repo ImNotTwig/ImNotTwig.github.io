@@ -122,6 +122,24 @@
         margin-right: 2px;
     }
 
+    .interests {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        td {
+            margin-left: 2px;
+            margin-right: 2px;
+            flex: 1;
+        }
+        fieldset {
+            border: 2px dotted #F49AC2;
+            height: 100%;
+            margin: 0px;
+        }
+    }
+
     .pfp {
         display: inline-block;
         overflow: hidden;
@@ -245,58 +263,77 @@
       <fieldset style="word-wrap: break-word;">
         <legend>Interests / Things I think are cool</legend>
         <table style="width: 100%;">
-          <tr class="navbar" style="margin-left: auto; margin-right: auto; display: flex; flex-direction: row; width: 100%;">
-            <td style="flex: 1; border: 2px dotted #F49AC2">
-              Projects: <br>
-              - <a href="https://github.com/schizofox/schizofox">schizofox</a><br>
-              - <a></a><br>
-              - <a></a><br>
-              - <a></a><br>
-              - <a></a><br>
+          <tr class="interests">
+            <td >
+              <fieldset>
+                <legend>Projects</legend>
+                - <a href="https://github.com/schizofox/schizofox">Schizofox</a><br>
+                - <a href="https://ziglang.org/">Zig</a><br>
+                - <a href="https://www.gnu.org/software/emacs/">Emacs</a><br>
+                - <a href="https://github.com/Vencord/Vesktop">Vesktop</a><br>
+                - <a href="https://cock.li/">cockmail</a> :&#41;<br>
+              </fieldset>
             </td>
-            <td style="flex: 1; border: 2px dotted #F49AC2">
-              Music: <br>
-              - <a href="https://last.fm/user/Twig69420">My LastFM</a>
+            <td>
+              <fieldset>
+                <legend>Music</legend>
+                - <a href="https://last.fm/user/Twig69420">My LastFM</a><br>
+                I like musicals quite a bit. in particular, <br>
+                - Ride The Cyclone <br>
+                - Chicago <br>
+                - Little Shop of Horrors <br>
+                - The Heathers <br>
+                - Hamilton <br>
+                - and some others... <br>
+                My Last.fm shows most of what i listen to, but in general I prefer alternative music, musicals, some classical, and folk, as well as certain genres of pop. <br>
+              </fieldset>
             </td>            
-            <td style="flex: 1; border: 2px dotted #F49AC2">
-              Games: <br>
-              - <a href="https://steamcommunity.com/id/twigthecat">My Steam</a><br>
-              - Minecraft <br>
-              - Factorio <br>
-              - Terraria <br>
-              - Skyrim <br>
-              - Fallout New Vegas, 4, 76 <br>
-              - The Finals <br>
-              - Apex Legends <br>
-              - Titanfall 2 <br>
-              - Team Fortress 2 <br>
+            <td>
+              <fieldset>
+                <legend>Games</legend>
+                - <a href="https://steamcommunity.com/id/twigthecat">My Steam</a><br>
+                - Minecraft <br>
+                - Factorio <br>
+                - Terraria <br>
+                - Skyrim <br>
+                - Fallout New Vegas, 4, 76 <br>
+                - The Finals <br>
+                - Apex Legends <br>
+                - Titanfall 2 <br>
+                - Team Fortress 2 <br>
+                - ... <br>
+              </fieldset>
             </td>
-            <td style="flex: 1; border: 2px dotted #F49AC2">
-              Books: <br>
-              - One Flew Over The Cuckoo&#39;s Nest <br>
-              - Just Mercy <br>
-              - To Kill a Mockingbird <br>
-              - Fahrenheit 451 <br>
-              - A Clockwork Orange <br>
-              - Magnus Chase <br>
-              - The Road (currently reading) <br>
-              - ... <br>
+            <td>
+              <fieldset>
+                <legend>Books</legend>
+                - One Flew Over The Cuckoo&#39;s Nest <br>
+                - Just Mercy <br>
+                - To Kill a Mockingbird <br>
+                - Fahrenheit 451 <br>
+                - A Clockwork Orange <br>
+                - Magnus Chase <br>
+                - The Road (currently reading) <br>
+                - ... <br>
+              </fieldset>
             </td>
-            <td style="flex: 1; border: 2px dotted #F49AC2">
-              Movies/Shows: <br>
-              - American Psycho <br>
-              - The Shining <br>
-              - Paprika <br>
-              - Parasyte: The Maxim <br>
-              - Kakegurui <br>
-              - The Queen&#39;s Gambit <br>
-              - Over the Garden Wall <br>
-              - Hilda <br>
-              - Adventure Time <br>
-              - Steven Universe <br>
-              - etc Cartoon Network shows <br>
-              - A Series of Unfortunate Events <br>
-              - ... <br>
+            <td>
+                <fieldset>
+                  <legend>Movies/Shows</legend>
+                  - American Psycho <br>
+                  - The Shining <br>
+                  - Paprika <br>
+                  - Parasyte: The Maxim <br>
+                  - Kakegurui <br>
+                  - The Queen&#39;s Gambit <br>
+                  - Over the Garden Wall <br>
+                  - Hilda <br>
+                  - Adventure Time <br>
+                  - Steven Universe <br>
+                  - etc Cartoon Network shows <br>
+                  - A Series of Unfortunate Events <br>
+                  - ... <br>
+                </fieldset>
             </td>
           </tr>
         </table>
@@ -327,10 +364,10 @@
         <hr class="sidebar-strip" style="color: #BFD7B5; background-color: #BFD7B5;">
       </td>
       <td>
-        <hr class="sidebar-strip" style="color: #8EB6F5; background-color: #8EB6F5;">    
+        <hr class="sidebar-strip" style="color: #C1E7E3; background-color: #C1E7E3;">    
       </td>
       <td>
-        <hr class="sidebar-strip" style="color: #C1E7E3; background-color: #C1E7E3;">    
+        <hr class="sidebar-strip" style="color: #8EB6F5; background-color: #8EB6F5;">    
       </td>
       <td>
         <hr class="sidebar-strip" style="color: #C3B1E1; background-color: #C3B1E1;">
