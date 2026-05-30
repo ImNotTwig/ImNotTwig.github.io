@@ -1,170 +1,170 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<html>
-  <style>
-    /* Iosevka Comfy source: https://github.com/protesilaos/iosevka-comfy */
-    @font-face {
-        font-family: "Iosevka Comfy";
-        src: url(./fonts/iosevka-comfy-normalregularupright.ttf);
-    }
-
-    * {
-        font-family: "Iosevka Comfy";
-        font-weight: 700;
-    }
-
-    html,
-    body {
-        box-sizing: border-box;
-        position: relative;
-        color: #C9C7CD;
-        font-size: 0.95em;
-        margin: 0;
-        height: 100%;
-        background: #0F1010;
-    }
-
-    body {
-        min-height: 100vh;
-        position: relative;
-    }
-
-    body::after {
-        content: '';
-        display: block;
-        height: 25px;
-        margin-left: 16px;
-    }
-
-    header {
-        min-height: 50px;
-        margin: auto;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        font-size: 1.25em;
-        color: #F8C8DC;
-        background: #0F1010;
-    }
-    
-    td, tr {
-        padding: 0;
-        margin: 0;
-    }
-
-    a {
-        color: #8EB6F5;
-        text-decoration: underline;
-    }
-
-    a:visited {
-        color: #C3B1E1;
-    }
-
-    fieldset {
-        border: 2px solid #F5BBA1;
-        text-align: start;
-        box-sizing: border-box;
-        margin: 0px;
-        padding: 5px;
-        padding-top: 0px;
-    }
-
-    table { 
-        padding: 0px;
-        border-collapse: collapse;
-    }
-
-    footer {
-        background: #0F1010D0;
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: fixed;
-        bottom: 0;
-        height: 15px;
-        padding-bottom: 10px;
-    }
-
-    .sidebar {
-        height: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 16px;
-        float: left;
-        margin-left: 15px;
-    }
-    
-    .sidebar tr {
-        height: 100%;
-    }
-
-    .sidebar-strip {
-        width: 3px;
-        height: 100%;
-        padding: 0;
-        margin: 0; 
-        margin-left: 5px;
-    }
-
-    .navbar {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navbar td {
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-
-    .interests {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        td {
-            margin-left: 2px;
-            margin-right: 2px;
-            flex: 1;
-        }
-        fieldset {
-            border: 2px dotted #F49AC2;
-            height: 100%;
-            margin: 0px;
-        }
-    }
-
-    .pfp {
-        display: inline-block;
-        overflow: hidden;
-    }
-
-    .pfp img {
-        display: block;
-        transition: transform 0.3s ease;
-    }
-
-    .pfp img:hover {
-        transform: translateY(-5px);
-    }
-    
-  </style>
-
+<html lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> TwigTheCat </title>
+    <style>
+      /* Iosevka Comfy source: https://github.com/protesilaos/iosevka-comfy */
+      @font-face {
+          font-family: "Iosevka Comfy";
+          src: url(./fonts/iosevka-comfy-normalregularupright.ttf);
+      }
+
+      * {
+          font-family: "Iosevka Comfy";
+          font-weight: 700;
+      }
+
+      html,
+      body {
+          box-sizing: border-box;
+          position: relative;
+          color: #C9C7CD;
+          font-size: 0.95em;
+          margin: 0;
+          height: 100%;
+          background: #0F1010;
+      }
+
+      body {
+          min-height: 100vh;
+          position: relative;
+      }
+
+      body::after {
+          content: '';
+          display: block;
+          height: 25px;
+          margin-left: 16px;
+      }
+
+      header {
+          min-height: 50px;
+          margin: auto;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          font-size: 1.25em;
+          color: #F8C8DC;
+          background: #0F1010;
+      }
+      
+      td, tr {
+          padding: 0;
+          margin: 0;
+      }
+
+      a {
+          color: #8EB6F5;
+          text-decoration: underline;
+      }
+
+      a:visited {
+          color: #C3B1E1;
+      }
+
+      fieldset {
+          border: 2px solid #F5BBA1;
+          text-align: start;
+          box-sizing: border-box;
+          margin: 0px;
+          padding: 5px;
+          padding-top: 0px;
+      }
+
+      table { 
+          padding: 0px;
+          border-collapse: collapse;
+      }
+
+      footer {
+          background: #0F1010D0;
+          text-align: center;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          position: fixed;
+          bottom: 0;
+          height: 15px;
+          padding-bottom: 10px;
+      }
+
+      .sidebar {
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 16px;
+          float: left;
+          margin-left: 15px;
+      }
+      
+      .sidebar tr {
+          height: 100%;
+      }
+
+      .sidebar-strip {
+          width: 3px;
+          height: 100%;
+          padding: 0;
+          margin: 0; 
+          margin-left: 5px;
+      }
+
+      .navbar {
+          width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .navbar td {
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-left: 2px;
+          margin-right: 2px;
+      }
+
+      .interests {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          div {
+              margin-left: 2px;
+              margin-right: 2px;
+              flex: 1;
+          }
+          fieldset {
+              border: 2px dotted #F49AC2;
+              height: 100%;
+              margin: 0px;
+          }
+      }
+
+      .pfp {
+          display: inline-block;
+          overflow: hidden;
+      }
+
+      .pfp img {
+          display: block;
+          transition: transform 0.3s ease;
+      }
+
+      .pfp img:hover {
+          transform: translateY(-5px);
+      }
+      
+    </style>
   </head>
+
 
   <body style="text-align: center;">
     <header style="width: fit-content; padding-left: 60px;">
       Twig&#39;s Cat Corner
       <div class="pfp"><a href="https://github.com/ImNotTwig">
-          <img src="./img/twig.png" style="width: 60px; vertical-align: middle;"></img></a></div>
+          <img src="./img/twig.png" style="width: 60px; vertical-align: middle;">
+      </a></div>
       <hr style="color: #F8C8DC; margin-right: 65px;">
     </header>
 
@@ -264,9 +264,8 @@
 
       <fieldset style="word-wrap: break-word;">
         <legend>Interests / Things I think are cool</legend>
-        <table style="width: 100%;">
-          <tr class="interests">
-            <td >
+        <div class="interests" style="display: flex; gap: 10px;">
+            <div>
               <fieldset>
                 <legend>Projects</legend>
                 - <a href="https://github.com/andir/npins/">npins</a><br>
@@ -282,10 +281,11 @@
                 - <a href="https://codeberg.org/river/river">river</a><br>
                 - <a href="https://github.com/YaLTeR/niri/">niri</a><br>
                 - <a href="https://github.com/limo-app/limo">limo</a><br>
-                - <a href="https://github.com/PrismLauncher/PrismLauncher/">PrismLauncher</a>
+                - <a href="https://github.com/PrismLauncher/PrismLauncher/">PrismLauncher</a><br>
+                - <a href="https://github.com/bevyengine/bevy">Bevy</a>
               </fieldset>
-            </td>
-            <td>
+            </div>
+            <div>
               <fieldset>
                 <legend>Music</legend>
                 - <a href="https://last.fm/user/Twig69420">My LastFM</a><br>
@@ -295,11 +295,13 @@
                 - Little Shop of Horrors <br>
                 - The Heathers <br>
                 - Hamilton <br>
+                - Avenue Q <br>
+                - The Book of Mormom <br>
                 - and some others... <br>
                 My Last.fm shows most of what i listen to, but in general I prefer alternative music, musicals, some classical, and folk, as well as certain genres of pop. <br>
               </fieldset>
-            </td>            
-            <td>
+            </div>            
+            <div>
               <fieldset>
                 <legend>Games</legend>
                 - <a href="https://steamcommunity.com/id/twigthecat">My Steam</a><br>
@@ -317,10 +319,11 @@
                 - Fear and Hunger 1 and 2 <br>
                 - Look Outside <br>
                 - Team Fortress 2 <br>
+                - Deadlock <br>
                 - ... <br>
               </fieldset>
-            </td>
-            <td>
+            </div>
+            <div>
               <fieldset>
                 <legend>Books</legend>
                 - One Flew Over The Cuckoo&#39;s Nest <br>
@@ -331,10 +334,11 @@
                 - Magnus Chase <br>
                 - The Road <br>
                 - Four Past Midnight <br>
+                - House of Leaves <br>
                 - ... <br>
               </fieldset>
-            </td>
-            <td>
+            </div>
+            <div>
                 <fieldset>
                   <legend>Movies/Shows</legend>
                   - American Psycho <br>
@@ -355,51 +359,50 @@
                   - A Series of Unfortunate Events <br>
                   - ... <br>
                 </fieldset>
-            </td>
-          </tr>
-        </table>
+            </div>
+        </div>
       </fieldset>
     </div>
     <br>
-    This website may not use javascript, but my desktop does! (I hate gtk, why does it have to look so good) <br>
+    This website may not use javascript, but my desktop does! (kinda, I mean, qml is a superset of js ig.) <br>
     <br><br>
     copyright 2024-2026 twig
     <br>
     <a href="https://github.com/ImNotTwig/ImNotTwig.github.io">source</a>
-  </body>
-  <table class="sidebar">
-    <tr>
-      <td>
-        <hr class="sidebar-strip" style="color: #F8C8DC; background-color: #F8C8DC;">
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #F49AC2; background-color: #F49AC2;">
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #FCA5A5; background-color: #FCA5A5;">
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #F5BBA1; background-color: #F5BBA1;">
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #BFD7B5; background-color: #BFD7B5;">
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #C1E7E3; background-color: #C1E7E3;">    
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #8EB6F5; background-color: #8EB6F5;">    
-      </td>
-      <td>
-        <hr class="sidebar-strip" style="color: #C3B1E1; background-color: #C3B1E1;">
-      </td>
-    </tr>
-  </table>
-  <footer>
-    <a href="https://nixwebr.ing/prev/twig">&lt- Prev</a>
-    | <a href="https://nixwebr.ing/">nixwebr.ing</a>
-    | <a href="https://nixwebr.ing/rand">Random</a>
-    | <a href="https://nixwebr.ing/next/twig">Next -&gt</a>
+    <table class="sidebar">
+      <tr>
+        <td>
+          <hr class="sidebar-strip" style="color: #F8C8DC; background-color: #F8C8DC;">
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #F49AC2; background-color: #F49AC2;">
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #FCA5A5; background-color: #FCA5A5;">
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #F5BBA1; background-color: #F5BBA1;">
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #BFD7B5; background-color: #BFD7B5;">
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #C1E7E3; background-color: #C1E7E3;">    
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #8EB6F5; background-color: #8EB6F5;">    
+        </td>
+        <td>
+          <hr class="sidebar-strip" style="color: #C3B1E1; background-color: #C3B1E1;">
+        </td>
+      </tr>
+    </table>
+    <footer>
+      <a href="https://nixwebr.ing/prev/twig">&lt;- Prev</a>
+      | <a href="https://nixwebr.ing/">nixwebr.ing</a>
+      | <a href="https://nixwebr.ing/rand">Random</a>
+      | <a href="https://nixwebr.ing/next/twig">Next -&gt;</a>
   </footer>
+  </body>
 </html>
 
